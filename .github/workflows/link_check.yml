@@ -13,9 +13,9 @@ on:
 jobs:
   markdown-link-check:
     name: Check links in markdown
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-stepsecurity-x64
     steps:
-      - uses: actions/checkout@v4
-      - uses: gaurav-nelson/github-action-markdown-link-check@v1
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+      - uses: gaurav-nelson/github-action-markdown-link-check@5c5dfc0ac2e225883c0e5f03a85311ec2830d368 # v1
         with:
           use-verbose-mode: true
