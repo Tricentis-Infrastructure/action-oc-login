@@ -8,10 +8,10 @@ on:
 jobs:
   login:
     name: OpenShift Login and Test
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-stepsecurity-x64
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
 
       - name: Log in and set context
         # In a real workflow, point the 'uses' to a tag.

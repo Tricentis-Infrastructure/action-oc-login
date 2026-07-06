@@ -8,17 +8,17 @@ on:
 jobs:
   login:
     name: OpenShift Login and Test
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-stepsecurity-x64
     env:
       TEST_MANIFEST: __tests__/manifests/timer.yaml
       TEST_USER: crt-redhat-github-actions-bot
       TEST_NAMESPACE: ${{ secrets.OPENSHIFT_NAMESPACE }}
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
 
       - name: Install oc v3
-        uses: redhat-actions/openshift-tools-installer@v1
+        uses: redhat-actions/openshift-tools-installer@144527c7d98999f2652264c048c7a9bd103f8a82 # v1.13.1
         with:
           oc: 3
 
