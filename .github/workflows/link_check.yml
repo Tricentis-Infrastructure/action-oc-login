@@ -16,6 +16,6 @@ jobs:
     runs-on: ubuntu-stepsecurity-x64
     steps:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
-      - uses: gaurav-nelson/github-action-markdown-link-check@5c5dfc0ac2e225883c0e5f03a85311ec2830d368 # v1
+      - uses: step-security/github-action-markdown-link-check@0dd51a3ded30f612ff77b33988b04b84f54902eb # v1.0.19
         with:
           use-verbose-mode: true
